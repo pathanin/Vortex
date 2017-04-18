@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Turnable : MonoBehaviour {
 
-	//public int m_PlayerNumber = 1;              // Used to identify which tank belongs to which player.  This is set by this tank's manager.
+	//public int m_ObjectNumber = 1;              // Used to identify which tank belongs to which player.  This is set by this tank's manager.
 	public float m_TurnSpeed = 180f;            // How fast the tank turns in degrees per second.
 
 	private string m_TurnAxisName;              // The name of the input axis for turning.
