@@ -46,6 +46,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\LaserScript2.cs" />
      <Compile Include="Assets\Scripts\ShotLaser.cs" />
      <Compile Include="Assets\Scripts\Turnable.cs" />
      <Compile Include="Assets\Scripts\laserScript.cs" />

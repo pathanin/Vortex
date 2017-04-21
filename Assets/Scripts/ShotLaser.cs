@@ -13,6 +13,7 @@ public class ShotLaser : MonoBehaviour {
     private Vector3 pointA;
     private Vector3 pointB;
     public float dest;
+    private Vector3 gunLocation;
 
     private LineRenderer lineRenderer;
     public Transform origin;
@@ -30,7 +31,8 @@ public class ShotLaser : MonoBehaviour {
 		// The Shot axis is based on the player number.
 		m_ShotButton = "Fire1";
         lineRenderer = gameObject.GetComponent<LineRenderer>();
-        lineRenderer.SetPosition(0, origin.position);
+        gunLocation = new Vector3(origin.position.x, origin.position.y + 1, origin.position.z);
+        lineRenderer.SetPosition(0, gunLocation);
         lineRenderer.SetWidth(.45f, .45f);
 
         pointA = origin.position;
@@ -48,7 +50,7 @@ public class ShotLaser : MonoBehaviour {
 
 	private void Update ()
 	{
-        lineRenderer.SetPosition(0, origin.position);
+        lineRenderer.SetPosition(0, gunLocation);
         pointA = origin.position;
         pointB = origin.position + transform.forward * dest;
         //pointB.Set(pointB.x, origin.position.y, pointB.z);
