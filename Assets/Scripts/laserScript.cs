@@ -28,7 +28,7 @@ public class laserScript : MonoBehaviour
         lineRenderer.enabled = true;
         lineRenderer.positionCount = 1;
         lineRenderer.SetPosition(0, currentHit);
-        for (int i = 0; i < 20; i++)
+        for (int i = 0; i < 200; i++)
         {
             RaycastHit hit;
             if (Physics.Raycast(currentHit, currentFoward, out hit, Mathf.Infinity))
