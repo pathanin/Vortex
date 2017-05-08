@@ -46,13 +46,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Black Hole\Script\Demo.cs" />
+     <Compile Include="Assets\Black Hole\Script\FreeCamera.cs" />
      <Compile Include="Assets\Scripts\LaserScript2.cs" />
      <Compile Include="Assets\Scripts\MirrorReflection.cs" />
      <Compile Include="Assets\Scripts\ShotLaser.cs" />
      <Compile Include="Assets\Scripts\Turnable.cs" />
      <Compile Include="Assets\Scripts\laserScript.cs" />
      <None Include="Assets\Materials\MirrorReflection.shader" />
+     <None Include="Assets\Black Hole\ReadMe.txt" />
      <None Include="Assets\tower-defense-assets\README.txt" />
+     <None Include="Assets\Black Hole\Shader\Black Hole.shader" />
      <None Include="Assets\Materials\Boxes and Barrels\Info.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

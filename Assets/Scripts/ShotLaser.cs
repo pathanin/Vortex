@@ -15,6 +15,8 @@ public class ShotLaser : MonoBehaviour {
     public float dest;
     private Vector3 gunLocation;
 
+    
+
     private LineRenderer lineRenderer;
     public Transform origin;
     //private Transform destination;
